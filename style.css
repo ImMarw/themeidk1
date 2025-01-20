@@ -1,15 +1,5 @@
 /* Global Reset and Base Styles */
-body,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-ul,
-ol,
-a {
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -19,69 +9,58 @@ body {
   font-family: "Roboto", Arial, sans-serif;
   color: #333;
   line-height: 1.6;
-  background-color: #f8f9fa; /* Light background for modern feel */
+  background-color: #f8f9fa; /* Light gray background for modern feel */
 }
 
 a {
   text-decoration: none;
   color: #007bff; /* Primary link color */
+  transition: color 0.3s ease;
 }
 
 a:hover {
-  color: #0056b3;
+  color: #0056b3; /* Slightly darker blue on hover */
   text-decoration: underline;
 }
 
 /* Navbar */
 .navbar {
-  background-color: #ffffff;
+  background-color: #343a40; /* Dark gray for modern look */
   padding: 0.75rem 1rem;
-  border-bottom: 1px solid #e9ecef;
+  border-bottom: 2px solid #007bff; /* Add a colored underline */
 }
 
 .navbar-brand {
   font-size: 1.5rem;
   font-weight: bold;
-  color: #333;
+  color: #ffffff;
 }
 
 .navbar-brand:hover {
-  color: #007bff;
+  color: #00aaff; /* Light blue hover effect */
 }
 
-#navbarNav > * > * > *:hover {
-  color: #007bff;
-}
-
-#navbarNav > * > *{
-    margin: auto;
-    display: flex;
-}
-
-#navbarNav > * > * > * {
-  display: flex;
-  text-decoration: none;
+#navbarNav > ul > li > a {
   color: #ffffff;
   font-size: 1rem;
-  padding: 0.5rem 1rem;
   font-weight: 500;
+  padding: 0.5rem 1rem;
 }
 
-.custom-logo-link img {
-  width: 50px;
-  height: auto;
+#navbarNav > ul > li > a:hover {
+  color: #007bff;
 }
 
 /* Hero Section */
 .hero {
-  background: linear-gradient(to right, #007bff, #00aaff);
+  background: linear-gradient(135deg, #007bff, #00aaff); /* Diagonal gradient */
   color: #fff;
   padding: 5rem 1rem;
   text-align: center;
 }
 
 .hero h1 {
-  font-size: 3rem;
+  font-size: 3.5rem;
   font-weight: bold;
   margin-bottom: 1rem;
 }
@@ -98,10 +77,10 @@ a:hover {
 }
 
 #products h2 {
-  font-size: 2rem;
+  font-size: 2.25rem;
   text-align: center;
   color: #333;
-  margin-bottom: 2rem;
+  margin-bottom: 2.5rem;
 }
 
 .card {
@@ -112,8 +91,8 @@ a:hover {
 }
 
 .card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transform: translateY(-7px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15); /* Softer shadow */
 }
 
 .card img {
@@ -134,7 +113,7 @@ a:hover {
 
 .card-text {
   color: #666;
-  font-size: 0.9rem;
+  font-size: 0.95rem;
 }
 
 .card-body {
@@ -143,7 +122,7 @@ a:hover {
 
 /* Footer */
 footer {
-  background-color: #343a40;
+  background-color: #212529; /* Darker gray */
   color: #ffffff;
   padding: 3rem 1rem;
 }
@@ -151,6 +130,7 @@ footer {
 footer h5 {
   font-size: 1.25rem;
   margin-bottom: 1rem;
+  color: #00aaff;
 }
 
 footer p,
