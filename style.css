@@ -1,0 +1,192 @@
+/* Global Reset and Base Styles */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+a {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", Arial, sans-serif;
+  color: #333;
+  line-height: 1.6;
+  background-color: #f8f9fa; /* Light background for modern feel */
+}
+
+a {
+  text-decoration: none;
+  color: #007bff; /* Primary link color */
+}
+
+a:hover {
+  color: #0056b3;
+  text-decoration: underline;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #ffffff;
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid #e9ecef;
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.navbar-brand:hover {
+  color: #007bff;
+}
+
+#navbarNav > * > * > *:hover {
+  color: #007bff;
+}
+
+#navbarNav > * > *{
+    margin: auto;
+    display: flex;
+}
+
+#navbarNav > * > * > * {
+  display: flex;
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  font-weight: 500;
+}
+
+.custom-logo-link img {
+  width: 50px;
+  height: auto;
+}
+
+/* Hero Section */
+.hero {
+  background: linear-gradient(to right, #007bff, #00aaff);
+  color: #fff;
+  padding: 5rem 1rem;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.25rem;
+  margin-bottom: 2rem;
+}
+
+/* Product Catalog */
+#products {
+  background-color: #fff;
+  padding: 3rem 1rem;
+}
+
+#products h2 {
+  font-size: 2rem;
+  text-align: center;
+  color: #333;
+  margin-bottom: 2rem;
+}
+
+.card {
+  border: none;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+  object-fit: cover;
+  height: 200px;
+}
+
+.card-title {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+  color: #007bff;
+  font-weight: bold;
+}
+
+.card-title:hover {
+  text-decoration: underline;
+}
+
+.card-text {
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.card-body {
+  padding: 1rem;
+}
+
+/* Footer */
+footer {
+  background-color: #343a40;
+  color: #ffffff;
+  padding: 3rem 1rem;
+}
+
+footer h5 {
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+}
+
+footer p,
+footer a {
+  color: #ccc;
+  font-size: 0.9rem;
+}
+
+footer a:hover {
+  color: #007bff;
+  text-decoration: underline;
+}
+
+footer .row div {
+  margin-bottom: 1rem;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+
+  #products h2 {
+    font-size: 1.5rem;
+  }
+
+  .card img {
+    height: 150px;
+  }
+
+  footer {
+    text-align: center;
+  }
+}
